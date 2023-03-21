@@ -1,3 +1,3 @@
 function set_path_index(){
-    history.pushState({}, null, "revendeor-oficial");
+    history.pushState({}, null, "vendedor-oficial");
 }
