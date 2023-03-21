@@ -1,0 +1,1224 @@
+:root{
+    --color-blue: #02E9F8;
+    --color-blue-2: #00B2D7;
+    --color-blue-3: #0A5A6A;
+    --color-blue-4: #01D3FF;
+    --color-white-1: #FFF;
+    --color-white-2: #FCFCFC;
+    --color-black: #000;
+    --color-grey: #7A7A7A;
+    --color-grey-2: #D3D3D3;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html:focus-within{
+    scroll-behavior: smooth!important;
+}
+body{
+    background-color: var(--color-white);
+    font-family: "Arial", Sans-serif;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior : smooth!important;
+}
+#first{
+    width: 100%;
+    height: auto;
+    /* background-image: url('imgs/background.png');
+    background-repeat: no-repeat;
+    background-size: 130% auto;
+    background-position-x: -300px;
+    background-position: center right;
+    background-size: cover; */
+}
+#first-bg{
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    height: 100%;
+    left: -360px;
+    filter: brightness(0.6);
+}
+.item-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.padding-left{
+    padding-left: 17%;
+}
+.padding-left-3{
+    padding-left: 20%;
+}
+.padding-left-top{
+    padding-top: 30px;
+    padding-left: 30px;
+
+}
+.padding-top{
+    padding-top: 30px;
+}
+.padding-top-2{
+    padding-top: 40px;
+}
+.padding-top-3{
+    padding-top: 80px;
+}
+.padding-right{
+    padding-right: 17%;
+}
+.padding-top-plus{
+    padding-top: 300px;
+
+}
+.top-layer{
+    z-index: 2;
+}
+#logo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 30px 0px;
+}
+#logo-container img{
+    width: 377px;
+    height: 169px;
+}
+#itens-sessao-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, fit-content);
+    grid-template-areas:    "t i"
+                            "d i"
+                            "b i";
+                            box-sizing: border-box;
+                        }
+                        
+.titulo{
+    color: var(--color-white-2);
+    width: 100%;
+    grid-area: t;
+    line-height: 1;
+}
+.titulo-black{
+    color: var(--color-black);
+}
+.titulo h2{
+    font-size: 38px;
+    font-weight: 700;
+    
+}
+
+#itens-sessao-1 span{
+    color: var(--color-blue)
+}
+#itens-sessao-2 span{
+    color: var(--color-blue-2)
+}
+#itens-sessao-2 .descricao p{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+p{
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    color: var(--color-grey);
+    font-size: 15px;
+    font-weight: 400;
+}
+.descricao{
+    color: var(--color-white-1);
+    width: 100%;
+    grid-area: d;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+#itens-sessao-1 .descricao ul{
+    list-style: none;
+}
+#itens-sessao-1 .descricao ul li{
+    margin: 15px 0px;
+}
+.descricao h2{
+    font-size: 2rem;
+}
+.botao{
+    width: 100%;
+    height: 200px;
+    grid-area: b;
+}
+
+.botao img{
+    width: 280px;
+    height: auto;
+}
+.botao a > img:first-child{
+    width: 260px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@keyframes glow{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+.botao-com-animacao{
+    transition: linear;
+    animation: glow  2s infinite;
+    
+}
+
+.botao .selos{
+    width: 300px;
+    height: auto;
+    margin-top: -15px;
+}
+.botao a{
+    height: fit-content;
+}
+.imagem{
+    width: 100%;
+    grid-area: i;
+    box-sizing: border-box;
+    z-index: 4;
+}
+#itens-sessao-1 .imagem{
+    z-index: 4;
+}
+.imagem img{
+    margin-left: 50px;
+    width: 100%;
+    height: auto;
+}
+.imagem .imagem-menor{
+    width: 70%;
+}
+/* TESTE */
+svg{
+    width: 350%;
+    margin-top: -150px;
+    z-index: -1;
+}
+#itens-sessao-2 .titulo h2{
+    color: var(--color-black);
+}
+#itens-sessao-2 .descricao p{
+    color: var(--color-grey);
+}
+#itens-sessao-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, fit-content);
+    grid-template-areas:    "t t"
+                            "i d"
+                            "i b";
+                           
+    box-sizing: border-box;
+    font-family: "Roboto", Sans-serif;
+
+}
+
+
+
+.sessao-black{
+    background-color: #000;
+    border-radius: 26px;;
+    z-index: -1;
+    height: fit-content;
+}
+#itens-sessao-3{
+    
+    width: 100%;
+    height: inherit;
+    border-radius: 26px;
+    overflow: hidden;
+    position: relative;
+}
+#itens-sessao-3 .background{
+    width: 100%;
+    height: auto;
+    opacity: 0.26;
+    position: absolute;
+    z-index: 1;
+}
+
+#itens-sessao-3 h2{
+    color: var(--color-white-1);
+    font-size: 40px;
+    z-index: 2;
+    position: relative;
+    width: fit-content;
+}
+#itens-sessao-3 .destaque{
+    font-size: 52px;
+    color: var(--color-blue-4);
+}
+.beneficios-itens{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "i1 i2 i3"
+                        "i4 i5 i6";
+    position: relative;
+    z-index: 2;
+    gap: 20px 50px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+#item1{
+    grid-area: i1;
+}
+#item2{
+    grid-area: i2;
+}
+#item3{
+    grid-area: i3;
+}
+#item4{
+    grid-area: i4;
+}
+#item5{
+    grid-area: i5;
+}
+#item6{
+    grid-area: i6;
+}
+.beneficios-itens .beneficio-item{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.beneficios-itens .beneficio-item img{
+    width: auto;
+    height: 100px;
+    z-index: 2;
+}
+.beneficios-itens .beneficio-item p{
+    width: 100%;
+    color: var(--color-blue-4);
+    font-size: 19px;
+    font-weight: 600;
+    padding: 0px;
+}
+#itens-sessao-3 .botao{
+    width: 50%;
+    height: fit-content;
+    padding-bottom: 20px;
+}
+.sessao-super .sessao-black{
+    border-radius: 50px;
+}
+#itens-sessao-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, fit-content);
+    grid-template-areas:    "t t"
+                            "d i"
+                            "b i"
+                            "bl bl";
+    box-sizing: border-box;
+    gap: 0px;
+
+    }
+                        
+
+#itens-sessao-4 .titulo  h2{
+    color: var(--color-blue-3);
+    font-size: 28px;
+    font-weight: 600;
+}
+#itens-sessao-4 .titulo{
+    padding-bottom: 30px;
+}
+#itens-sessao-4 .titulo  h2:first-child{
+    color: var(--color-blue-2);
+    font-size: 40px;
+    font-weight: 700;
+}
+#itens-sessao-4 .descricao{
+    height: fit-content;
+}
+#itens-sessao-4 .descricao ul{
+    width: 80%;
+    padding-left: 30px;
+}
+#itens-sessao-4 .descricao ul li{
+    background-color: var(--color-grey-2);
+    margin: 15px 0px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+#itens-sessao-4 .descricao ul #li-1 p{
+    width: 95%;
+}
+#itens-sessao-4 .descricao ul #li-2 p{
+    background-color: var(--color-blue-3);
+    width: 98%;
+}
+#itens-sessao-4 .descricao ul #li-3 p{
+    width: 99%;
+}
+#itens-sessao-4 .descricao ul #li-4 p{
+    background-color: var(--color-blue-3);
+    width: 98%;
+}
+#itens-sessao-4 .descricao ul #li-5 p{
+    width: 96%;
+}
+
+#itens-sessao-4 .descricao ul li p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--color-white-1);
+    background-color: var(--color-blue-2);
+    font-size: 17px;
+    line-height: 31px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px 20px;
+    position: absolute;
+    width: 100%;
+}
+#itens-sessao-4 .sessao-black{
+    border-radius: 50px;
+}
+#itens-sessao-4 .imagem{
+    padding-right: 100px;
+    height: fit-content;
+    width: 90%;
+}
+#itens-sessao-4 .botao{
+    
+    padding-left: 70px;
+}
+
+
+.sub-sessao{
+    grid-area: bl;
+    width: 100%;
+    padding-bottom: 40px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    margin-top: -18px;
+}
+.sub-sessao .background{
+    width: 100%;
+    height: auto;
+    opacity: 0.26;
+    position: absolute;
+    z-index: 1;
+}
+:not(.background){
+
+    position: relative;
+    z-index: 2;
+    color: var(--color-white-1)
+}
+
+.sub-sessao .h2-1{
+    font-size: 40px;
+    font-weight: 700;
+}
+.sub-sessao .h2-2{
+    font-size: 28px;
+    font-weight: 600;
+}
+.double-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "v txt";
+}
+.double-div1{
+    grid-area: v;
+    width: 100%;
+}
+.double-div2{
+    grid-area: txt;
+    width: 100%;
+}
+.double-div2 p{
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 85%;
+}
+#itens-sessao-5 .titulo h2{
+    font-size: 28px;
+    color: var(--color-blue-3)
+}
+#itens-sessao-5 .titulo h2:first-child{
+    font-size: 40px;
+    color:var(--color-blue-2)
+}
+#itens-sessao-5 #slices{
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr fit-content;
+    grid-template-areas: "txt1 ft txt2"
+                        "txt3 ft txt4"
+                        "bs bs bs";
+}
+#slices div h2{
+    text-align: center;
+    color: var(--color-blue-2);
+    font-size: 27px;
+    font-weight: 600;
+
+}
+#slices div p {
+    color: var(--color-grey);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 20px;
+}
+#slices div p span strong{
+    color: var(--color-blue-2);
+}
+#slice1{
+    grid-area: txt1;
+    width: 100%;
+}
+#slice2{
+    grid-area: txt2;
+    width: 100%;
+}
+#slice3{
+    grid-area: ft;
+    width: 100%;
+}
+#slice4{
+    grid-area: txt3;
+    width: 100%;
+}
+#slice5{
+    grid-area: txt4;
+    width: 100%;
+}
+#slice6{
+    grid-area: bs;
+    width: 100%;
+}
+
+/* SESSÃO 6 */
+.sem-radius{
+    border-radius: 0px;
+}
+#itens-sessao-6{
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 60px;
+}
+#itens-sessao-6 .background{
+    width: 100%;
+    height: auto;
+    opacity: 0.26;
+    position: absolute;
+    z-index: 1;
+}
+#itens-sessao-6 .produtos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    gap: 0px;
+}
+#itens-sessao-6 .produtos img{
+    width: 230px;
+    height: auto;
+}
+
+
+#itens-sessao-6 h2{
+    font-size: 28px;
+    color: var(--color-blue-4);
+}
+#itens-sessao-6 .h2-1{
+    color: var(--color-white-1);
+    font-size: 40px;
+    font-weight: 700;
+}
+#itens-sessao-6 .selos{
+    width: 350px;
+    height: auto;
+    margin-top: 30px;
+}
+
+#itens-sessao-7 .double-grid .double-div2 h2{
+    font-size: 40px;
+    color: var(--color-blue-2);
+    text-align: center;
+}
+
+#itens-sessao-7{
+    padding: 20px 0px;
+}
+#itens-sessao-7 .double-grid{
+    padding-bottom: 50px;
+}
+#itens-sessao-7 .sessao-black .sub-sessao h2.h2-2{
+    font-size: 21px;
+    color: var(--color-blue-2);
+}
+#itens-sessao-7 .double-grid .double-div1 img{
+    width: 40%;
+    height: auto;
+    margin: 0px auto;
+}
+#itens-sessao-7 .sessao-black .double-grid .double-div1 img{
+    width: 50%;
+    height: auto;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+#itens-sessao-7 .double-grid .double-div2 .h2-2{
+    color: var(--color-blue-3);
+}
+#itens-sessao-7 .double-grid .double-div2{
+    padding-right: 50px;
+}
+#itens-sessao-7 .double-grid .double-div2 p{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-black);
+    line-height: 1;
+    text-align: center;
+}
+#itens-sessao-7 .sessao-black .sub-sessao  .h2-2{
+    color: var(--color-white-2);
+}
+#itens-sessao-7 .sessao-black .sub-sessao .double-grid .double-div2 p{
+    color: var(--color-white-2);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: start;
+}
+#itens-sessao-8 h2{
+    color: var(--color-blue-2);
+    font-size: 26px;
+}
+#itens-sessao-8 .h2-1{
+    font-size: 40px;
+}
+#itens-sessao-8 .h2-2{
+    color: var(--color-blue-3)
+}
+#itens-sessao-8 .texto{
+    width: 55%;
+    height: fit-content;
+}
+#itens-sessao-8 .texto p{
+    color: var(--color-grey);
+    text-align: start;
+    font-size: 18px;
+    font-weight: 400;
+}
+#itens-sessao-8 .texto p strong{
+    color: var(--color-grey)
+}
+#itens-sessao-8 .texto p span{
+    color: var(--color-blue-2);
+    font-size: 26px;
+    font-weight: 600;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: var(--color-black);
+    overflow: hidden;
+    position: relative;
+}
+footer .background{
+    position: absolute;
+
+    width: 100%;
+    opacity: 0.26;
+}
+footer .footer-itens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+}
+
+footer .footer-itens img{
+    width: 180px;
+    height: auto;
+
+}
+footer .footer-itens img:first-child{
+    width: 230px;
+    height: auto;
+
+}
+footer .footer-itens .links h2{
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--color-white-1);
+}
+footer .footer-itens .links img{
+    width: 250px;
+    height: auto;
+}
+
+@media (max-width: 1120px) {
+    #first-bg{
+        height: 95%;
+        
+    }
+    svg{
+        width: 300%;
+    }
+    #itens-sessao-1 .descricao{
+        font-size: 22px;
+    }
+    #itens-sessao-3 .background{
+        height: 100%;
+        width: auto;
+    }
+    .beneficios-itens .beneficio-item{
+        width: 300px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .beneficios-itens .beneficio-item img{
+        width: auto;
+        height: 100px;
+        z-index: 2;
+    }
+    .beneficios-itens .beneficio-item p{
+        font-size: 16px;
+    }
+    #itens-sessao-6 .background{
+        width: auto;
+        height: 100%;
+    }
+    #itens-sessao-6 .produtos img{
+        width: 200px;
+        height: auto;
+    }
+    .sub-sessao .background{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 1050px) {
+    #itens-sessao-1 .titulo h2{
+        font-size: 32px;
+    }
+    #itens-sessao-1 .imagem {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #itens-sessao-1 .descricao{
+        font-size: 20px;
+    }
+    #itens-sessao-3 .beneficio-item img{
+        height: 80px;
+    }
+    #itens-sessao-7 .sessao-black .sub-sessao .double-grid{
+        padding-bottom: 0px;
+    }
+    #itens-sessao-6 .produtos {
+        width: 90%;
+    }
+    #itens-sessao-8 .texto{
+        width: 70%;
+    }
+}
+
+@media (max-width: 980px) {
+    #itens-sessao-1{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, fit-content);
+        grid-template-areas:    "t"
+                                "i"
+                                "d"
+                                "b";
+                                box-sizing: border-box;
+                            }
+    #first-bg{
+        height: 100%;
+        
+    }
+    #itens-sessao-1 .titulo{
+        padding: 20px;
+    }
+    #itens-sessao-1 .titulo h2{
+        width: 100%;
+        text-align: center;
+    }
+    #itens-sessao-1 .descricao{
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #itens-sessao-1 .imagem{
+        width: 80%;
+        padding-top: 0px;
+    }
+    svg{
+        margin-top: -160px;
+    }
+    #itens-sessao-2{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, fit-content);
+        grid-template-areas:    "t"
+                                "i"
+                                "d"
+                                "b";
+                               
+        box-sizing: border-box;
+        font-family: "Roboto", Sans-serif;
+    
+    }
+    #itens-sessao-2 .titulo h2{
+        font-size: 36px;
+    }
+    #itens-sessao-2 .imagem{
+        padding-left: 0px;
+    }
+    #itens-sessao-2 .imagem img{
+        width: 70%;
+    }
+    #itens-sessao-2 .descricao{
+        padding: 0px 20px;
+    }
+    #itens-sessao-2 .botao{
+        padding-right: 0px;
+    }
+    #itens-sessao-3 h2{
+        font-size: 32px;
+    }
+    #itens-sessao-3 .destaque{
+        font-size: 32px;
+    }
+    .beneficios-itens{
+        margin-top: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: (repeat(6, fit-content));
+        grid-template-areas: "i1"
+                            "i2"
+                            "i3"
+                            "i4"
+                            "i5" 
+                            "i6";
+        gap: 10px 0px;
+    }
+    .beneficios-itens .beneficio-item{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        height: fit-content;
+        width: 400px;
+    }
+    #itens-sessao-3 .botao{
+        padding-top: 20px;
+    }
+    #itens-sessao-4{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, fit-content);
+        grid-template-areas:    "t"
+                                "d"
+                                "b"
+                                "i"
+                                "bl";
+        box-sizing: border-box;
+        gap: 0px;
+    
+    }
+    #itens-sessao-4 .titulo h2:last-child{
+        font-size: 22px;
+    }
+    #itens-sessao-4 .descricao{
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #itens-sessao-4 .botao{
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #itens-sessao-4 .imagem{
+        padding-right: 0px;
+    }
+    .sessao-super .sessao-black .sub-sessao .double-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "txt";
+    }
+    .sessao-super .sessao-black .sub-sessao h2, .h2-1{
+        font-size: 32px;
+    }
+    .sessao-super .sessao-black .sub-sessao .h2-2{
+        font-size: 20px;
+    }
+
+    #itens-sessao-5 .titulo h2{
+        text-align: center;
+    }
+    #itens-sessao-5 .titulo h2:first-child{
+        font-size: 36px;
+    }
+    #itens-sessao-5 #slices{
+        padding: 100px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, fit-content);
+        grid-template-areas: "txt1"
+                            "txt2"
+                            "ft"
+                            "txt3"
+                            "txt4"
+                            "bs";
+    }
+    #itens-sessao-5 #slices #slice3{
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #itens-sessao-6 .produtos{
+        flex-direction: column-reverse;
+    }
+    #itens-sessao-6 .produtos img{
+        width: 300px;
+    }
+    #itens-sessao-7 .double-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, fit-content);
+        grid-template-areas:
+                            "v"
+                            "txt";
+    }
+    #itens-sessao-7 .double-grid h2{
+        font-size: 32px;
+    }
+    #itens-sessao-7 .double-grid .double-div2{
+        padding-right: 0px;
+    }
+    #itens-sessao-7 .double-grid .double-div1 img{
+        width: 20%;
+        margin-bottom: 20px;
+    }
+    #itens-sessao-7 .sessao-black{
+        border-radius: 0px;
+    }
+    #itens-sessao-7 .sessao-black .sub-sessao{
+        border-radius: 0px;
+    }
+    #itens-sessao-7 .sessao-black .sub-sessao .background{
+        border-radius: 0px;
+        width: auto;
+        height: 100%;
+    }
+    #itens-sessao-7 .sessao-black .sub-sessao .double-grid .double-div2 p{
+        width: 100%;
+        padding-right: 0px;
+        text-align: center;
+        padding: 0px 20px;
+    }
+            
+}
+@media (max-width: 860px) {
+    #itens-sessao-2 .titulo h2{
+        text-align: center;
+    }
+    #itens-sessao-3  h2{
+        text-align: center;
+    }
+    #itens-sessao-4 .titulo h2{
+        text-align: center;
+    }
+    .sessao-super .sub-sessao h2.h2-1, h2.h2-2{
+        text-align: center;
+    }
+    .sessao-super .sub-sessao .background{
+        height: 150%;
+        width: auto;
+    }
+    #first-bg{
+        left: -600px ;
+    }
+    footer{
+        width: 100%;
+        height: inherit;
+    }
+    footer .background{
+        height: 100%;
+        width: auto;
+    }
+    .footer-itens{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 650px) {
+    
+    .sessao-super .sub-sessao h2.h2-1{
+        text-align: center;
+        font-size: 26px;
+    }
+    .sessao-super .sub-sessao h2.h2-2{
+        text-align: center;
+        font-size: 19px;
+    }
+    .sessao-super .sub-sessao .double-grid .double-div2{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    #itens-sessao-4 .imagem{
+        padding-right: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #itens-sessao-4 .imagem img{
+        width: 400px;
+        height: auto;
+        margin: 0px;
+    }
+    #itens-sessao-5 .titulo h2:first-child{
+        font-size: 30px;
+    }
+    #itens-sessao-5 .titulo h2{
+        font-size: 22px;
+    }
+    #itens-sessao-5 #slices{
+        padding: 20px;
+    }
+    #itens-sessao-6 h2.h2-1{
+        font-size: 30px;
+        text-align: center;
+    }
+    #itens-sessao-6 h2{
+        text-align: center;
+        font-size: 24px;
+    }
+    #itens-sessao-3 h2, .destaque{
+        font-size: 25px;
+    }
+    #itens-sessao-7 .double-grid .double-div1 img{
+        width: 200px;
+    }
+    #itens-sessao-7 .double-grid .double-div2 h2{
+        font-size: 30px;
+    }
+    #itens-sessao-7 .double-grid .double-div2 p{
+        font-size: 21px;
+    }
+    #itens-sessao-7 .sessao-black .sub-sessao h2.h2-1{
+        font-size: 26px;
+    }
+    #itens-sessao-7 .sessao-black .sub-sessao h2.h2-2{
+        font-size: 21px;
+    }
+    #itens-sessao-8 h2.h2-1{
+        font-size: 30px;
+    }
+    #itens-sessao-8 h2.h2-2{
+        font-size: 21px;
+    }
+    #itens-sessao-8 .texto{
+        width: 80%;
+    }
+}
+@media (max-width: 600px){
+    #first #logo-container img{
+        width: 250px;
+        height: auto;
+    }
+    #itens-sessao-1 .titulo{
+        padding: 0px;
+    }
+    #itens-sessao-2{
+    }
+    #itens-sessao-2 .titulo h2{
+        font-size: 30px;
+    }
+    #itens-sessao-3 h2, .destaque{
+        font-size: 25px;
+    }
+    #itens-sessao-4 .titulo h2:last-child{
+        font-size: 20px;
+        text-align: center;
+    }
+    #itens-sessao-4 .descricao{
+        padding-top: 10px;
+    }
+    
+    
+    .sessao-super .sub-sessao{
+        padding-bottom: 5px;
+    }
+    .sessao-super .sub-sessao .background{
+        height: 120%;
+        width: auto;
+    }
+    .sessao-super .sub-sessao h2.h2-1{
+        text-align: center;
+        font-size: 26px;
+    }
+    .sessao-super .sub-sessao h2.h2-2{
+        text-align: center;
+        font-size: 19px;
+    }
+    .sessao-super .sub-sessao .double-grid .double-div2{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+   
+}
+@media (max-width: 560px) {
+    #first-bg{
+        height: 95%;
+    }
+    svg{
+        position: absolute;
+        bottom: 0px;
+        margin-top: 0px;
+    }
+    
+    
+}
+@media (max-width: 450px) {
+    #itens-sessao-1 .titulo h2{
+        font-size: 25px;
+    }
+    #itens-sessao-1 .descricao{
+        font-size: 18px;
+        padding: 10px;
+    }
+    #itens-sessao-2 .titulo h2{
+        font-size: 25px;
+    }
+    #itens-sessao-2 .image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    #itens-sessao-2 .image img{
+        margin-right: 50px;
+        width: 300px;
+    }
+    #itens-sessao-2 .descricao h2{
+        text-align: center;
+        font-size: 25px;
+    }
+    #itens-sessao-2 .descricao p {
+        font-size: 1.2rem;
+    }
+  
+ 
+    #itens-sessao-3 .beneficios-itens .beneficio-item{
+        width: 300px;
+        padding: 10px;
+    }
+    #itens-sessao-3 .beneficios-itens .beneficio-item img{
+        height: 100px;
+    }
+    #itens-sessao-4 .titulo h2:first-child{
+        text-align: center;
+        font-size: 28px!important;
+    }
+    #itens-sessao-4 .titulo h2{
+        text-align: center;
+        font-size: 20px!important;
+    }
+    #itens-sessao-4 .descricao ul{
+        padding: 0px;
+    }
+    #itens-sessao-4 .imagem img{
+        width: 250px;
+    }
+    .sessao-super .sessao-black{
+        border-radius: 0px;
+    }
+    .sessao-super .sessao-black .sub-sessao{
+        border-radius: 0px;
+    }
+    .sub-sessao .double-grid .double-div2 p{
+        font-size: 1.1rem;
+        padding: 5px;
+    }
+    .sessao-super .sessao-black .sub-sessao h2.h2-1{
+        font-size: 22px;
+    }
+    .sessao-super .sessao-black .sub-sessao h2.h2-2{
+        font-size: 18px;
+        padding: 0px 10px;
+    }
+    .sessao-super .sessao-black .sub-sessao .double-grid .double-div2 p{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    #itens-sessao-5 .titulo h2{
+        text-align: center;
+        font-size: 25px!important;
+        padding: 0px 5px;
+    }
+    #itens-sessao-5 #slices div h2{
+        font-size: 22px;
+    }
+    #itens-sessao-5 #slices div p{
+        font-size: 1.1rem;
+    }
+    #itens-sessao-6 h2.h2-1{
+        font-size: 25px;
+    }
+    #itens-sessao-6 h2{
+        font-size: 20px;
+    }
+    #itens-sessao-7 .double-grid .double-div2 h2{
+        font-size: 25px;
+    }
+    #itens-sessao-8 h2.h2-1{
+        font-size: 25px;
+    }
+    #itens-sessao-8 .texto p span{
+        font-size: 20px;
+    }
+}
