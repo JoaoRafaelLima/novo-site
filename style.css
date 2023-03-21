@@ -541,8 +541,8 @@ svg{
     padding-bottom: 60px;
 }
 #itens-sessao-6 .background{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 120%;
     opacity: 0.26;
     position: absolute;
     z-index: 1;
